@@ -21,6 +21,8 @@
 		Cookie cookie1 = new Cookie("cookieID",mid);
 		Cookie cookie2 = new Cookie("log_in","yes");
 		
+		cookie1.setMaxAge(60*60*24); //24시간 동안 지속 가능한 지속쿠키로 전환
+		
 		response.addCookie(cookie1);
 		response.addCookie(cookie2);
 		
